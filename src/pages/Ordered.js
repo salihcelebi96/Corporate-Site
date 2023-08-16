@@ -11,7 +11,7 @@ const Ordered = () => {
              <Nav/>
         </div>
         <div className=' flex flex-col items-center justify-center '>
-            <div>
+        <div>
         <AiOutlineCheckCircle size={90}   color="green" />
         </div>
       <div>
