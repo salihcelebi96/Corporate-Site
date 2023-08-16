@@ -1,10 +1,11 @@
 import React from 'react'
 import Pricing from '../components/Pricing'
 
-const PricingPage = () => {
+const PricingPage = (props) => {
+  const { price, setPrice } = props;
   return (
     <div>
-      <Pricing/>
+      <Pricing price={price}  setPrice={setPrice}  />
     </div>
   )
 }

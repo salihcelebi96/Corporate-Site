@@ -9,7 +9,7 @@ const Features = () => {
         {FeaturesData.map((feature, index) => (
           <div key={index} className="p-4 border rounded-lg w-96 flex flex-col justify-center items-center shadow-lg">
             <div className={`text-${feature.icon} text-4xl mb-4`}>
-              {/* Burada ikon için örneğin Font Awesome kullanıyorsak, feature.icon ile ikonu doğrudan kullanabiliriz */}
+             
               {feature.icon}
             </div>
             <h3 className="text-lg font-semibold mb-2">{feature.name}</h3>

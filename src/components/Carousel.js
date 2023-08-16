@@ -11,17 +11,17 @@ const image4Url = "https://images.unsplash.com/photo-1522071820081-009f0129c71c?
 const Carousel = () => {
   const settings = {
     dots: true,
-    infinite: true, // Set to true for continuous sliding
+    infinite: true, 
     speed: 500,
-    slidesToShow: 1, // Show one slide at a time
+    slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true, // Show navigation arrows
+    arrows: true, 
   };
 
   const slides = [
-    [image1, image2, image3], // Slide 1: Three images in a set
-    [image2, image3, image4Url], // Slide 2: Three images in a set
-    // Add more sets of three images as needed
+    [image1, image2, image3], 
+    [image2, image3, image4Url], 
+    
   ];
 
   return (

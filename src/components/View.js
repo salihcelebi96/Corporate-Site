@@ -20,12 +20,12 @@ const View = () => {
             </div>
         </div>
          <div>
-      {/* SVG dosyasını <img> etiketi ile göstermek */}
+      
       <img className='h-72' src={logo} alt="Logo" />
 
-      {/* SVG içeriğini JSX içinde göstermek */}
+      
       {/* <svg width="100" height="100" viewBox="0 0 100 100">
-        ... SVG içeriği burada olacak ...
+       
       </svg> */}
     </div>
     </div>

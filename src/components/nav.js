@@ -7,8 +7,8 @@ const Nav = () => {
     <div className='  '>
       <div className='main h-32 text-white relative z-10  '>
         <div className='h-32 flex justify-around items-center '>
-        <Link to="/" className='text-white text-2xl flex gap-5'> {/* Link to Home */}
-            <FiAnchor /> {/* FiAnchor icon */}
+        <Link to="/" className='text-white text-2xl flex gap-5'> 
+            <FiAnchor /> 
             <h1 className='text-white text-lg font-thin'>DELTA SECURE</h1>
           </Link>
 

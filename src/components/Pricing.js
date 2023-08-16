@@ -2,11 +2,26 @@ import React from 'react';
 import pricingData from '../data/PricingData';
 import Nav from "./nav";
 import { FaHeadphones } from 'react-icons/fa';
+import {Link} from "react-router-dom" ;
 
-const Pricing = () => {
+const Pricing = (props) => {
+  const { price, setPrice } = props;
+ 
+  console.log('Price:', price); 
+ 
+  const handleGetStarted = (price) => {
+    setPrice(price);
+    
+  };
+
+
+
   return (
     <div className='bg-gray-950 min-h-screen'>
-      <Nav />
+      <div className='bg-gray-900'>
+        <Nav />
+      </div>
+      
 
       <div className='text-white relative flex justify-center items-center min-h-screen gap-5 p-4 md:p-8 lg:p-16'>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
@@ -22,7 +37,10 @@ const Pricing = () => {
                   </li>
                 ))}
               </ul>
-              <button className="bg-gray-800 hover:bg-gray-700 border-white border-2 text-white font-bold py-2 px-4 rounded mt-4">Get Started</button>
+              <Link to="/payment">
+              <button className="bg-gray-800 hover:bg-gray-700 border-white border-2 text-white font-bold py-2 px-4 rounded mt-4"     onClick={() => handleGetStarted(pricing.price)} >Get Started</button>
+              </Link>
+              
             </div>
           ))}
         </div>
